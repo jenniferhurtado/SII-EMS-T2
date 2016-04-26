@@ -5,7 +5,7 @@
       xmlns:p="http://primefaces.org/ui"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <h:head>
-        <title><ui:insert name="title">Titulo por defecto</ui:insert>Facelet Title</title>
+        <title><ui:insert name="title">Titulo por defecto</ui:insert></title>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <link rel="stylesheet" type="text/css" href="./css/jumbotron.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" media="screen" />
@@ -26,7 +26,8 @@
                             <p:submenu label="Inicio">
                             </p:submenu>
                             <p:submenu label="Avisos">
-                                <p:menuitem value="Mis avisos" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
+                                <p:menuitem value="Mis avisos" action="nuevoAviso.xhtml"  ajax="false" icon="ui-icon-close"/>
+                                <!-- <p:menuitem value="Mis avisos" action="nuevoAviso.xhtml" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/> -->
                             </p:submenu>
                             <p:separator />
                             <p:submenu label="Órdenes de trabajo" >
