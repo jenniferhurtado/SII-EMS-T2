@@ -12,6 +12,13 @@
 
     <ui:define name="title">Vincular aviso</ui:define>
 
-    <ui:define name="contenido"></ui:define>
+    <ui:define name="contenido">
+        
+        <h:dataTable value="#{listarAvisos.listarAvisos}" var="aviso">
+            <h:column>
+                #{aviso}
+            </h:column>
+        </h:dataTable>
+    </ui:define>
     
 </ui:composition>
